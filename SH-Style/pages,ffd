@@ -1,0 +1,21 @@
+Requirements of pages
+#Parent !Root
+With the advent of the new 'Search' option it is advisable to include a {fCode}#Parent{f} line within {/}every{/} page. In the past it has been common to only include this in 'searchable' pages (those typed 'Text') as it was not possible to jump directly into a non-searchable page (typed 'Data'). Although it is not always possible to attribute a parent to a particular page, every effort should be made to try. By this mechanism it is possible to traverse the manual both forwards and backwards from any point. This can make looking for a section index from a keyword known to be in that section easier.
+
+Pages which are 'searchable' should, as stated above, by named appropriately and typed as 'Text'. This should hopefully reduce the possibility of looking up a word and getting an irrelevant page.
+
+The titles of pages should be made relevant to the topic discussed, whilst an attempt should be made to make the first word of the title identifiable. Starting a title with {/}'The'{/} or {/}'A'{/} should be avoided as these result in useless labels when iconised.
+
+Sub-pages within pages should be used in preference to a separate 'Data' file, {/}if{/} they are strictly local to the page. 'flags' blocks are a good example of where sub-pages are more useful than a separate file. This will hopefully reduce the maintenance required of a manual by removing extraneous files from a display. Named 'structure' blocks and those likely to be used by other pages should, however, be in self-contained pages. These should by typed as text if they are likely to be searched for.
+
+Colour within pages should be used sparingly, and only to give meaning. Where blocks should line up, '{fCode}#Tab{f}' should be used to do this, not spaces. Similarly, related items can be shown in a '{fCode}#Table{f}' block.
+
+Bullet points should usually be followed by tabs. This will ensure that wrapped lines will wrap to the indent after the bullet, and not to the bullet itself. Similarly, try not to turn wrapping off, unless you require it as such for a code excerpt.
+
+The use of italic, bold and underline by surrounding words with naked '{fCode}/{f}', '{fCode}*{f}', or '{fCode}_{f}' is discouraged by myself. The reason for this is somewhat selfish - SHtoHTML cannot recognise these sequences easily and will probably ignore them. If you want text to appear correctly in HTML you should use the bracketed versions, eg '{fCode}\{/\}{f}'.
+
+Tables of information should be headed, and followed by a '{fCode}#Line{f}' to distinguish them from plain text. Tables of 'options' or 'data structures' are better represented in subpages or new pages rather than inline with the text, unless this would make the top level page 'pointless'. This makes a quick reference possible and specific information ready at the click of a link.
+
+Be wary of blank lines at the bottom of a document; these can look untidy. '{fCode}#Include{f}' should be used sparingly. Only a few occasions arise when it should be needed in any case.
+
+The use of self-modifying pages should be refrained from. There may, in future, be a means by which this can be done without affecting the manual involved, but for the time being such manuals will have to be 'Cleaned' periodically. Control characters within pages will confuse or crash StrongHelp. In particular code 0 should be avoided as this terminates a page.

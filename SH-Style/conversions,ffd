@@ -1,0 +1,30 @@
+Conversions
+#Parent !Root
+Whilst StrongHelp is an exceptionally powerful hypertext medium, it is not perfect for every job. As such, conversions from one form to another are sometimes problematic. Things to watch out for when converting to StrongHelp are :
+#Indent 2
+è	There are no arbitrary font style changes; try to use the 'standard' fonts to the best effect possible. It is unlikely that style changes other than bold, italic, underline and code increase the readability of the document in any case.
+è	Avoid using underline as a style change; underline is almost universally used as a link in StrongHelp.
+è	Tables are laid out by StrongHelp rather than by the author. HTML style tables are 'awkward' to emulate in StrongHelp.
+è	Spaces cannot be used to align blocks; use tabs, or '{fCode}#Table{f}' blocks instead.
+è	Wrapping is a useful way of modifying the text from a 'truncated' source. '{fCode}#Wrap on{f}' is a useful way of ensuring that pre-formatted text (with newlines in) will be re-joined in StrongHelp, but can sometimes lead to problems.
+è	Always turn off styles in the order you turned them on. Without matching '{fCode}\{f\}{f}'s the toggling of styles, bold and italic can become confused.
+è	The use of 'bullet's in the standard character set is encouraged in preference to using the fonts Selwyn or Sidney. There is nothing wrong with using those fonts though.
+è	*Never* use byte access to files in a manual. Always create files in memory and save them to the manual, or generate them in another filing system and copy them into the manual using load and save operations.
+#indent
+
+When converting from StrongHelp, you should bare in mind :
+#Indent 2
+è	There may not always be a 'parent' item to determine where this page came from.
+è	Tables in Columns and Lines read downwards, not across. This can make translation to HTML 'awkward'.
+è	Subpages are not always possible in different hypertext systems and might need implementing as individual pages.
+#Indent
+
+There are currently only a few <conversion programs=>.progs> available.
+#
+#Subpage progs
+Conversion programs
+From		To		Author			Comments
+#Line
+Perl POD	StrongHelp	Micheal Attenborough	This is a Perl program to perform this conversion. I have no details of it's availability.
+StrongHelp	HTML		Justin Fletcher		This is a very rough BASIC program, with little support for Table's. Details available on request.
+Librarian	StrongHelp	Justin Fletcher		This is an almost complete BASIC program, though the produced manuals is obviously still based around pages. Details available on request.

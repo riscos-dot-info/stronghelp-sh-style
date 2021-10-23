@@ -1,0 +1,22 @@
+!Configure file
+#Parent !Root
+The !Configure file inside each manual should not, by rights, exist. Since it's only purpose is to modify the overall style of the manual this should not be in the manual authors control {/}unless{/} they explicitly wish to make it so. The users configuration in their !Configure file should be obeyed for the majority of the time.
+
+Valid uses of the !Configure file are :
+#Indent 2
+è	Modifying the 'extra' fonts used in a manual (24-31)
+	You might use this to add special symbols fonts to the manual. Selwyn and Sidney are the only two fonts that should be added in this way; Others are at the authors discretion and may not be available.
+è	Changing the 'standard' fonts to be more useful to the manual.
+	A 'large' manual might do better in smaller text than the standard font. Conversely, a 'large' manual might be better split into smaller sections, or having it's pages separated out.
+è	Changing the standard 'styles' of the manual, where the manual is a conversion from some other source and this is made easier.
+	The Perl documentation falls into this category, as it's 'POD' files are designed for conversion, but not directly compatible with StrongHelp's styles.
+#indent
+
+Improper uses might be :
+#Indent 2
+è	Forcing a particular background colour.
+	This is irritating for users who may not have a 'tiled' background configured, or prefer their standard settings.
+è	Changing link colours, or styles.
+	This, again, should be the users choice and not the authors (unless the use dictates it)
+è	Exchanging the font mappings.
+	The 'standard' font mappings (0-3,10-15,20-23) should not be changed except at the users will.

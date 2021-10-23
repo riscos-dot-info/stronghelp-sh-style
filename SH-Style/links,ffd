@@ -1,0 +1,11 @@
+Link guidelines
+#Parent !Root
+Try to link to any relevant pages within the body of the text. Links such as '{/}Click {_}here{_} to see xxx{/}' should be avoided, and you should use a more readable form instead. The most common examples is '{/}The {_}xxx{_} command is usually used after this{/}'. This makes the text flow more easily and cuts down the amount of information on a page.
+
+Within links it is not possible to change styles of text and thus partially italicising a link is not possible. These can be implemented by the use of multiple links with the style changes surrounding the relevant sections. Leaving links 'open' (eg '{fCode}\<hello{f}') is dangerous and can crash some versions of StrongHelp.
+
+Keep the number of external manual links to a minimum unless you are totally sure that the destination manual will not change in structure. Examples of 'permanent' manuals are the StrongHelp, FileTypes, Assembly, Basic, C and VDU manuals. These are unlikely to change in the foreseeable future.
+
+Avoid using '{fCode}\<link=>page.subpage\>{f}' type links; use separate 'Data' pages if possible. You should {/}never{/} have to use links of the form '{fCode}\<link=>manual:page.subpage\>{f}'. If you do have to use such links, consider contacting the author of the destination manual for a structural change; whilst this might not be forthcoming, it makes life easier for all parties.
+
+Note: The '{fCode}\<link=>manual.subpage\>{f}' format for linking across manuals became defunct in version 2.03 of StrongHelp.

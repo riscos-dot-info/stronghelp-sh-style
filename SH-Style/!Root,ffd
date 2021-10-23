@@ -1,0 +1,16 @@
+StrongHelp Style Guide
+#Parent StrongHelp:!Root
+#fH3:Style Guide
+#Line
+#Indent 2
+è	<Introduction=>intro>
+è	<!Configure file=>configure>
+è	<The Root page=>root>
+è	<Page requirements=>pages>
+è	<Link guidelines=>links>
+è	<File structure=>filestruct>
+è	<!Pre file=>pre>
+è	<Conversions=>conversions>
+#indent
+#Line;Wrap Off;Tab
+<About this manual=>about>	v1.01
