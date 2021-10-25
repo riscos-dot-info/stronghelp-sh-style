@@ -1,6 +1,6 @@
 !Configure file
 #Parent !Root
-The !Configure file inside each manual should not, by rights, exist. Since it's only purpose is to modify the overall style of the manual this should not be in the manual authors control {/}unless{/} they explicitly wish to make it so. The users configuration in their !Configure file should be obeyed for the majority of the time.
+The !Configure file inside each manual should not, by rights, exist. Since it's only purpose is to modify the overall style of the manual this should not be in the manual authors control /unless/ they explicitly wish to make it so. The users configuration in their !Configure file should be obeyed for the majority of the time.
 
 Valid uses of the !Configure file are :
 #Indent 2

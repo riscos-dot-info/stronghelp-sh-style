@@ -5,8 +5,10 @@ Whilst the file structure is entirely up to the author, there are a few points w
 è	Large directory structure are slow to open. Reducing the number of files in a directory can be done in a number of ways; firstly, you can create subdirectories for sections, separate by underscores or some other marker (see the SWIs package for examples). Alternatively, the 'selection' method - using [{/}\<range\>{/}] is useful where items are not related.
 è	Multiple levels of directory are encouraged if necessary. Rather than filling up the first level directory with lots of files, it might be more reasonable to create sub-directories. Speed is not adversely affected, but maintenance is made much easier when the entire directory can be seen at a glance.
 è	Do not type files as Text unless you are sure that they should be found in a keyword search.
-è	Never copy files into a StrongHelp manual using a Filer_Action window {/}unless{/} you can guarantee that they will always be copied using load and save operations - in practice this means ensuring a large enough slot for the Filer_Action to hold all the files being copied. To be on the safe side you might use !CleanHlp to copy those files into a manual.
+è	Never copy files into a StrongHelp manual using a Filer_Action window /unless/ you can guarantee that they will always be copied using load and save operations - in practice this means ensuring a large enough slot for the Filer_Action to hold all the files being copied. To be on the safe side you might use !CleanHlp to copy those files into a manual.
 è	Never perform byte operations on StrongHelp manual files. This implies that you should never use OS_Find (OPENIN, or fopen()) to open a file within StrongHelp. Byte writes are sometimes 'dangerous' to the manual as a whole and should be avoided.
 è	Try to keep to a particular internal structure. Unless things become too awkward with a particular structure it is advisable to leave a particular manual in a single form rather than reorganising it as this would mean that external links would no longer work.
 è	Avoid saving selections from programs directly into manuals. !Draw uses byte access to write the file and this can corrupt the manual.
 #Indent
+
+It is polite to run released manuals through CleanCopy.

@@ -6,6 +6,8 @@ Within links it is not possible to change styles of text and thus partially ital
 
 Keep the number of external manual links to a minimum unless you are totally sure that the destination manual will not change in structure. Examples of 'permanent' manuals are the StrongHelp, FileTypes, Assembly, Basic, C and VDU manuals. These are unlikely to change in the foreseeable future.
 
+Avoid hiding URL links behind other text. StrongHelp is not a web browser, and people expect links to refer to local manuals. Any URL links should contain the text of the URL, for example <chris@recoil.org=>#URL mailto:chris@recoil.org>. This manual gets it right - see the <About> page.
+
 Avoid using '{fCode}\<link=>page.subpage\>{f}' type links; use separate 'Data' pages if possible. You should {/}never{/} have to use links of the form '{fCode}\<link=>manual:page.subpage\>{f}'. If you do have to use such links, consider contacting the author of the destination manual for a structural change; whilst this might not be forthcoming, it makes life easier for all parties.
 
 Note: The '{fCode}\<link=>manual.subpage\>{f}' format for linking across manuals became defunct in version 2.03 of StrongHelp.
