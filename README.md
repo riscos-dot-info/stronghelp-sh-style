@@ -1,7 +1,7 @@
 StrongHelp Style Guide
 ======================
 
-This project contains the source files for the Style Guide [hosted on riscos.info](http://www.riscos.info/downloads/stronghelp/manuals/).
+This project contains the source files for the StrongHelp Style Guide [hosted on riscos.info](http://www.riscos.info/downloads/stronghelp/manuals/).
 
 
 Conventions
